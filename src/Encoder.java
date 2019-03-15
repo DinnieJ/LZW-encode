@@ -29,6 +29,7 @@ public class Encoder extends Dictionary {
             if(!isFounded(di))
             {
                 result.add(find(p.toString()));
+                System.out.println("Add "+find(p.toString())+"("+p+")");
                 addLib(p.toString()+c);
                 p.setLength(0);
             }
@@ -39,6 +40,8 @@ public class Encoder extends Dictionary {
         }
         
         result.add(find(p.toString()));
+        System.out.println("Add "+find(p.toString())+"("+p+")");
+        System.out.println("After encoding");
         return result;
     }
 }
